@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cumpleaños</title>
+</head>
+
+<body class="cssBody">
+    <div class="cssDivPrincipal">
+
+        <!--Cumpleañeros Hoy-->
+        <h3 class="cssFontTitle">Cumpleañeros de Hoy</h3>
+        <div class="cssPanel">
+            <img src=".\images\feliz-cumpleaños.jpeg" class="cssImage" />
+            <div class="cssPanelItem">
+                <h3 class="cssFontSub">¡Muchas Felicidades!</h3>
+                <div id="dvEmpleados">
+                    <p class="cssFontB1">Juan Carlos Acosta</p>
+                    <p class="cssFontB1">Luis Perez Marin</p>
+                    <p class="cssFontB1">Fabiola Campos</p>
+                    <br />
+                    <span class="cssFontB1 cssFechaHoy">06-Nov-2023</span>
+                </div>
+            </div>
+        </div>
+
+        <!--Cumpleañeros del Mes-->
+        <h3 class="cssFontTitle">Cumpleañeros del Mes</h3>
+        <div id="contentMes">
+            <div class="cssPanel">
+                <div class="cssPanelItemMes" style="display:flex">
+                    <div class="cssPnlName">
+                        <p class="cssFontB2">Juan Alfonso Mezquites Garcia</p>
+                    </div>
+                    <div class="cssPnlFecha">
+                        <div class="cssFontB2Fecha">
+                            01/Nov
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div class="cssPanel">
+                <div class="cssPanelItemMes" style="display:flex">
+                    <div class="cssPnlName">
+                        <p class="cssFontB2">Daniel Hernandez Perez</p>
+                    </div>
+                    <div class="cssPnlFecha">
+                        <div class="cssFontB2Fecha">
+                            03/Nov
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./datosCumple.js"></script>
+</body>
+</html>
+<style>
+    .cssFontTitle {
+        text-align: left;
+        font-family: 'Century Gothic';
+        padding-left: 20px;
+        color: #0000e7;
+        font-size:larger;
+        margin-bottom:20px;
+    }
+    .cssFontSub {
+        text-align:left;
+        font-family: 'Century Gothic';
+        font-weight:600;
+    }
+
+    .cssFontB1 {
+        text-align:left;
+        font-family:Century Gothic;
+
+    }
+
+    .cssFechaHoy {
+        color: #0000e7;
+        font-weight: 800;
+    }
+
+    .cssBody {
+        background-color: black;
+        padding:50px 20% 50px 20%;
+    }
+
+    .cssDivPrincipal {
+        background-color: rgba(217,217,217,255);
+        height:100%;
+        padding: 40px 40px 40px 40px;
+    }
+
+    .cssPanel {
+        background-color: white;
+        margin-right:20px; 
+        margin-left:20px; 
+    }
+
+    .cssPanelItem {
+        background-color: white;
+        display: inline-block;
+        padding-left:50px;
+    }
+
+    .cssImage {
+        width:20%;
+        /*height:10%;*/
+    }
+
+    /*Estilos Cumpleañero del Mes*/
+
+    .cssFontB2 {
+        text-align: left;
+        font-family: Century Gothic;
+        font-size: large;
+    }
+
+    .cssFontB2Fecha {
+        text-align: center;
+        font-family: Century Gothic;
+        font-size: large;
+        color: #0000e7;
+        font-weight: 800;
+        background-color: gray;
+        margin: 6%;
+        padding: 8px;
+        width: 50%;
+    }
+
+    .cssPnlName {
+        padding-left:30px;
+        width:80%;
+    }
+    .cssPnlFecha {
+        width:20%;
+        background-color:white;
+    }
+           
+</style>
